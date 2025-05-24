@@ -63,7 +63,8 @@ def generate_gif(name):
 if name:
     gif = generate_gif(name)
     add_audio("happy_birthday.mp3")
-    st.image(gif, caption=f"Happy Birthday {name}!", use_column_width=True)
+    st.image(gif, caption="🎂 Ameen's Birthday Cake!", use_container_width=True)
+
 
     st.download_button("🎁 Download Birthday Card", gif, file_name=f"{name}_birthday.gif", mime="image/gif")
 else:
